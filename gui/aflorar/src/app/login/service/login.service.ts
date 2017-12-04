@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Cliente } from '../../cliente/domain/cliente';
 import { HttpClient } from '@angular/common/http';
-import * as global from '../../../global';
-import { clienteLogado } from '../../../global';
+import * as global from '../../global';
+import { clienteLogado } from '../../global';
 import { Carrinho } from '../../cliente/domain/carrinho';
 
 @Injectable()
@@ -24,6 +24,7 @@ export class LoginService {
         this.clienteLogado = new Cliente(); 
         global.setClienteLogado(this.clienteLogado.copy(ress));
         localStorage.setItem("clienteLogado", JSON.stringify(this.clienteLogado.copy(ress)));
+        localStorage.setItem("logado", "true");
       }
     })
     .catch(this.tratarErro);

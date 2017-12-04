@@ -109,9 +109,9 @@ export class ProdutoFormComponent implements OnInit {
     this.imagem = img;
     console.log(this.imagem);
 
-    this.produtoService.addImagemProduto("5a24e9e318bcec37acff1e72", this.imagem)
-      .then(res => console.log(res.nome))
-      .catch(err => alert(err));
+    // this.produtoService.addImagemProduto("5a24e9e318bcec37acff1e72", this.imagem)
+    //   .then(res => console.log(res.nome))
+    //   .catch(err => alert(err));
   }
 
 

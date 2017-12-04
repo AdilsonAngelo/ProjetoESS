@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Pais } from '../domain/pais';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-import * as global from '../../../global';
+import * as global from '../../global';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()

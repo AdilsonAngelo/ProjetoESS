@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-import * as global from '../../../global';
+import * as global from '../../global';
 import { HttpClient } from '@angular/common/http';
 import { Cliente } from '../domain/cliente';
 

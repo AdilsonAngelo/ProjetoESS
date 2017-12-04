@@ -28,9 +28,5 @@ public class ProdutoService {
 	public ProdutoDomain getProdutoById(String id) {
 		return this.produtoRepository.findById(id);
 	}
-	
-	public List<ProdutoDomain> getProdutoByCategoriasId(String id){
-		return null;
-	}
 
 }
